@@ -1,5 +1,5 @@
 import React from "react";
-import ProductItem from "./ProductItem"; // Import the ProductItem component
+import ProductItem from "./ProductItem"; 
 
 const SaveForLater = ({ savedProducts, moveToProduct }) => {
   const saveForLaterSize = savedProducts.length;
@@ -14,7 +14,7 @@ const SaveForLater = ({ savedProducts, moveToProduct }) => {
           isSaved={true}
           onActionButtonClick={(actionType) =>
             moveToProduct(product.id, actionType)
-          } // Pass the actionType here
+          } 
         />
       ))}
     </div>

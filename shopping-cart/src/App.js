@@ -110,7 +110,6 @@ function App() {
 
   const handleActionButtonClick = (actionType, productId) => {
     if (actionType === "moveToProduct") {
-      // Move the product to the "Product Section" based on the productId
       const productToMove = savedProducts.find(
         (product) => product.id === productId
       );
@@ -121,7 +120,6 @@ function App() {
         setProducts((prevProducts) => [...prevProducts, productToMove]);
       }
     } else if (actionType === "moveToSaved") {
-      // Move the product to the "Save for Later" section based on the productId
       const productToMove = products.find(
         (product) => product.id === productId
       );

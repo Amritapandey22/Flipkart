@@ -8,11 +8,10 @@ const ProductSection = ({ products, saveForLater }) => {
         <ProductItem
           key={product.id}
           product={product}
-          // onSaveForLaterClick={() => saveForLater(product.id)}
           isSaved={false}
           onActionButtonClick={(actionType) =>
             saveForLater(product.id, actionType)
-          } // Pass the actionType here
+          } 
         />
       ))}
     </div>

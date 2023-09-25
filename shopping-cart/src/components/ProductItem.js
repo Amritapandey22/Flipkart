@@ -12,10 +12,8 @@ function ProductItem({
   const handleButtonClick = () => {
     console.log("enter");
     if (isSaved) {
-      // If the product is in the "Save for Later" section, move it to the "Product Section"
       onActionButtonClick("moveToProduct", product.id);
     } else {
-      // If the product is in the "Product Section", move it to the "Save for Later" section
       onActionButtonClick("moveToSaved", product.id);
     }
   };
