@@ -1,6 +1,4 @@
-/* App.css */
 
-/* Reset some default styles */
 body,
 html {
   margin: 0;
@@ -17,8 +15,8 @@ html {
 }
 
 .logo img {
-  width: 100px; /* Set the width of the logo as needed */
-  height: auto; /* Maintain the aspect ratio */
+  width: 100px; 
+  height: auto; 
 }
 /* Dropdown Button */
 .dropbtn {
@@ -29,7 +27,6 @@ html {
   font-size: 16px;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   /* float: right; */
@@ -37,17 +34,14 @@ html {
   background-color: inherit;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #ffffff;
   min-width: 160px;
-  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content p {
   color: black;
   padding: 12px 16px;
@@ -55,12 +49,10 @@ html {
   display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content p:hover {
   background-color: #ddd;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -75,41 +67,35 @@ html {
   margin: 20px;
   display: flex;
   flex-direction: row;
-  flex: 1; /* Take up remaining vertical space */
+  flex: 1; 
 }
 
-/* Style the left section (Product Section and Save For Later) */
 .left-section {
-  flex: 1; /* Take up the left side of the content */
+  flex: 1; 
   display: flex;
   flex-direction: column;
 }
 
-/* Style the Product Section */
 .product-section {
   background-color: #ffffff;
   padding: 20px;
   margin: 10px;
 }
 
-/* Style the Save For Later section */
 .save-for-later {
   background-color: #ffffff;
   padding: 20px;
   margin: 10px;
 }
 
-/* Style the right section (Price Total) */
 .right-section {
   background-color: #ffffff;
-  flex: 0 0 400px; /* Fixed width for the Price Total section */
+  flex: 0 0 400px; 
   padding: 20px;
   margin: 10px;
   height: 400px;
 }
-/* ProductItem.css */
 
-/* Style for the individual product item */
 .product-item {
   display: flex;
   align-items: center;
@@ -117,22 +103,19 @@ html {
   border-bottom: 1px solid #ddd;
 }
 
-/* Style for the product image */
-/* Style for the product image container */
+
 .product-image {
-  width: 80px; /* Set the width */
-  height: 80px; /* Set the height */
-  overflow: hidden; /* Hide any overflow */
+  width: 80px;
+  height: 80px; 
+  overflow: hidden; 
   margin-right: 10px;
 }
 
-/* Style for the product image */
 .product-image img {
-  width: 100%; /* Make the image fill the entire container width */
-  height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+  width: 100%; 
+  height: auto; 
 }
 
-/* Style for the product details (name and price) */
 .product-details {
   flex-grow: 1;
 }
@@ -140,7 +123,6 @@ html {
 .product-name {
   padding: 30px;
 
-  /* font-weight: bold; */
   font-size: 18px;
   color: #212121;
   cursor: pointer;
@@ -174,11 +156,10 @@ html {
   color: #000000;
 }
 
-/* Style for the delivery date on the right side */
 .delivery-date {
   font-size: 14px;
   color: #000000;
-  margin-left: auto; /* Pushes the date to the right side */
+  margin-left: auto; 
 }
 .save-for-later h2 {
   text-transform: capitalize;
