@@ -1,4 +1,3 @@
-// ProductItem.js
 import React from "react";
 
 function ProductItem({
@@ -25,7 +24,7 @@ function ProductItem({
       </div>
       <div className="product-details">
         <div className="product-name">{product.name}</div>
-        <div className="product-price">{product.price}</div>
+        <div className="product-price">₹{product.price}</div>
         <button className="save" onClick={handleButtonClick}>
           {buttonLabel}
         </button>

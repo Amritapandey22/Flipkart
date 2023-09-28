@@ -1,4 +1,3 @@
-// App.js
 import React, { useState } from "react";
 import "./styles.css";
 import Header from "./components/Header";
@@ -10,31 +9,31 @@ function App() {
   const [products, setProducts] = useState([
     {
       id: 1,
-      name: "Product 1",
+      name: "VEERACOLLECTION Women Printed Straight Kurta",
       status: "SAVE FOR LATER",
       price: 10.99,
-      deliveryDate: "Delivery: Sep 30",
+      deliveryDate: "Delivery by Wed Sep 30",
       image: "https://images.meesho.com/images/products/53242933/lxcn8_512.webp"
     },
     {
       id: 2,
 
-      name: "Product 1",
+      name: "VEERACOLLECTION Women Printed Straight Kurta 1",
       status: "SAVE FOR LATER",
 
       price: 10.99,
-      deliveryDate: "Delivery: Sep 30",
+      deliveryDate: "Delivery by Tue Sep 29",
       image:
         "https://images.meesho.com/images/products/129549736/1vphn_512.webp"
     },
     {
       id: 3,
 
-      name: "Product 1",
+      name: "Aurelia Women Printed Straight Kurta 1",
       status: "SAVE FOR LATER",
 
       price: 10.99,
-      deliveryDate: "Delivery: Sep 30",
+      deliveryDate: "Delivery by Wed Sep 30",
       image:
         "https://images.ctfassets.net/5de70he6op10/wpXwHJpgoPX9E5YuOUwUc/e4eda3ff58b02d98c2165ece9b14ba82/527950270-beachwedding_topper4.jpg?w=600&q=80&fm=jpg&fl=progressive"
     },
@@ -45,62 +44,62 @@ function App() {
       status: "SAVE FOR LATER",
 
       price: 10.99,
-      deliveryDate: "Delivery: Sep 30",
+      deliveryDate: "Delivery by Wed Sep 30",
       image:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png"
     },
     {
       id: 5,
 
-      name: "Product 1",
+      name: "Product 2",
       status: "SAVE FOR LATER",
 
       price: 10.99,
-      deliveryDate: "Delivery: Sep 30",
+      deliveryDate: "Delivery by Wed Sep 30",
       image:
         "https://www.sherrihill.com/dw/image/v2/BDBR_PRD/on/demandware.static/-/Sites-master-catalog-sherrihill/default/dw427e809c/images/Sherri-Hill-55345-fuchsia-51753.jpg?sw=630&sh=966"
     },
     {
       id: 6,
 
-      name: "Product 1",
+      name: "Product 3",
       status: "SAVE FOR LATER",
 
       price: 10.99,
-      deliveryDate: "Delivery: Sep 30",
+      deliveryDate: "Delivery by Wed Sep 30",
       image:
         "https://www.sherrihill.com/dw/image/v2/BDBR_PRD/on/demandware.static/-/Sites-master-catalog-sherrihill/default/dw427e809c/images/Sherri-Hill-55345-fuchsia-51753.jpg?sw=630&sh=966"
     },
     {
       id: 7,
 
-      name: "Product 1",
+      name: "Product 4",
       status: "SAVE FOR LATER",
 
       price: 10.99,
-      deliveryDate: "Delivery: Sep 30",
+      deliveryDate: "Delivery by Wed Sep 30",
       image:
         "https://www.sherrihill.com/dw/image/v2/BDBR_PRD/on/demandware.static/-/Sites-master-catalog-sherrihill/default/dw427e809c/images/Sherri-Hill-55345-fuchsia-51753.jpg?sw=630&sh=966"
     },
     {
       id: 8,
 
-      name: "Product 1",
+      name: "Product 5",
       status: "SAVE FOR LATER",
 
       price: 10.99,
-      deliveryDate: "Delivery: Sep 30",
+      deliveryDate: "Delivery by Wed Sep 30",
       image:
         "https://www.sherrihill.com/dw/image/v2/BDBR_PRD/on/demandware.static/-/Sites-master-catalog-sherrihill/default/dw427e809c/images/Sherri-Hill-55345-fuchsia-51753.jpg?sw=630&sh=966"
     },
     {
       id: 9,
 
-      name: "Product 1",
+      name: "Product 6",
       status: "SAVE FOR LATER",
 
       price: 10.99,
-      deliveryDate: "Delivery: Sep 30",
+      deliveryDate: "Delivery by Wed Sep 30",
       image:
         "https://img.freepik.com/free-photo/flowing-purple-mountain-spiral-bright-imagination-generated-by-ai_188544-9853.jpg?q=10&h=200" // Replace with the actual image URL
     }

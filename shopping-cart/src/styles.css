@@ -4,27 +4,34 @@ html {
   margin: 0;
   padding: 0;
   background-color: #f1f3f6;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
 }
 .header {
+  width: 100%;
   background-color: #2874f0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 10px 10px;
+  padding: 0;
+  position: sticky;
+  height: 60px;
 }
 
 .logo img {
-  width: 100px; 
+  width: 100px;
+  cursor: pointer;
   height: auto; 
 }
 
 .dropbtn {
+  cursor: pointer;
+  line-height: 20px;
   background-color: inherit;
   border: none;
   color: white;
   padding: 16px;
   font-size: 16px;
+  font-weight: 660px;
 }
 
 .dropdown {
@@ -39,13 +46,16 @@ html {
   background-color: #ffffff;
   min-width: 160px;
   z-index: 1;
+  margin-top:7px;
 }
 
 .dropdown-content p {
   color: black;
-  padding: 12px 16px;
+  padding: 10px 14px;
   text-decoration: none;
   display: block;
+  cursor: pointer;
+  border-bottom: 1px solid #dddddd;
 }
 
 .dropdown-content p:hover {
@@ -60,10 +70,15 @@ html {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  overflow: auto;
+
 }
 
 .content {
   margin: 20px;
+  height: 100vh;
+
+  overflow: auto; 
   display: flex;
   flex-direction: row;
   flex: 1; 
@@ -77,22 +92,22 @@ html {
 
 .product-section {
   background-color: #ffffff;
-  padding: 20px;
   margin: 10px;
 }
 
 .save-for-later {
   background-color: #ffffff;
-  padding: 20px;
   margin: 10px;
+  border: none;
+  font-size: 16px;
+  color: #000000;
 }
 
 .right-section {
   background-color: #ffffff;
-  flex: 0 0 400px; 
-  padding: 20px;
+  flex: 0 0 27%; 
   margin: 10px;
-  height: 400px;
+  height: 350px;
 }
 
 .product-item {
@@ -102,17 +117,17 @@ html {
   border-bottom: 1px solid #ddd;
 }
 
-
 .product-image {
-  width: 80px;
-  height: 80px; 
+  width: 84px; 
+  height: 112px; 
   overflow: hidden; 
   margin-right: 10px;
 }
 
 .product-image img {
+  cursor: pointer;
   width: 100%; 
-  height: auto; 
+  height: 100%; 
 }
 
 .product-details {
@@ -120,61 +135,100 @@ html {
 }
 
 .product-name {
+  line-height: 16px;
   padding: 30px;
-
   font-size: 18px;
   color: #212121;
   cursor: pointer;
+  width: 412px; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .product-name:hover {
   color: #4275f2;
 }
-.save-for-later {
-  border: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 16px;
+.product-price {
+  padding: 0px 30px;
+  font-size: 18px;
+  font-weight: 550;
+  line-height: 25.2px;
   color: #000000;
-  cursor: pointer;
 }
+
 .save {
   border: none;
-  font-weight: bold;
+  font-weight: 550;
   text-transform: uppercase;
   font-size: 16px;
+  line-height: 22.4px;
   color: #000000;
   cursor: pointer;
   background-color: inherit;
-  padding: 10px;
+  padding: 20px 30px;
 }
-
-.product-price {
-  font-weight: bold;
-
-  color: #000000;
+.save:hover {
+  color: #4275f2;
 }
 
 .delivery-date {
+  padding-top: 25px;
+  align-self: flex-start;
   font-size: 14px;
+  white-space: nowrap; 
+  line-height: 19.6px;
   color: #000000;
-  margin-left: auto; 
+  margin-left: auto;
 }
 .save-for-later h2 {
   text-transform: capitalize;
-}
-
-.price-total h3 {
-  font-size: 18px;
-  color: #878787;
-}
-
-.price-total hr {
+  padding:15px 30px;
   border-bottom: 1px solid #ddd;
 }
-.price-total p {
-  padding: 10px;
+
+.price-details {
+  display: flex;
+  justify-content: space-between;
+  padding:10px 40px;
+  border-bottom: 1px dotted #ddd;
 }
-.price-total span {
-  text-align: right;
+.price-detail-heading {
+  padding:20px;
+  border-bottom: 1px solid #ddd;
+}
+.price-detail-heading h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 8px 15px;
+  line-height: 22.4px;
+  font-weight: 550;
+  color: #878787;
+  font-size: 18px;
+}
+
+.price-detail-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.price-detail-description p {
+  line-height: 22.4px;
+  letter-spacing: normal;
+  font-size: 16px;
+}
+.price-detail-description-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.price-total-amount-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 35px;
+}
+.price-total-amount-box p {
+  font-size: 18px;
+  font-weight: bold;
 }
