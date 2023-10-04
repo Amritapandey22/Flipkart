@@ -5,7 +5,7 @@ const SaveForLater = ({ savedProducts, moveToProduct }) => {
   const saveForLaterSize = savedProducts.length;
 
   return (
-    <div className="save-for-later">
+    <section className="save-for-later-section">
       {saveForLaterSize > 0 && <h2>Saved for later ({saveForLaterSize})</h2>}
       {savedProducts.map((product, index) => (
         <ProductItem
@@ -17,7 +17,7 @@ const SaveForLater = ({ savedProducts, moveToProduct }) => {
           } 
         />
       ))}
-    </div>
+    </section>
   );
 };
 

@@ -4,9 +4,9 @@ html {
   margin: 0;
   padding: 0;
   background-color: #f1f3f6;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: Roboto;
 }
-.header {
+header {
   width: 100%;
   background-color: #2874f0;
   display: flex;
@@ -16,11 +16,14 @@ html {
   position: sticky;
   height: 60px;
 }
-
+button{
+  font-family: inherit;
+  font-weight: 500;
+}
 .logo img {
   width: 100px;
   cursor: pointer;
-  height: auto; 
+  height: 100%; 
 }
 
 .dropbtn {
@@ -31,13 +34,16 @@ html {
   color: white;
   padding: 16px;
   font-size: 16px;
-  font-weight: 660px;
+  font-weight: 500;
+
+  height: 100%;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
   background-color: inherit;
+  height:100%;
 }
 
 .dropdown-content {
@@ -46,7 +52,7 @@ html {
   background-color: #ffffff;
   min-width: 160px;
   z-index: 1;
-  margin-top:7px;
+  /* margin-top:2px; */
 }
 
 .dropdown-content p {
@@ -77,14 +83,13 @@ html {
 .content {
   margin: 20px;
   height: 100vh;
-
   overflow: auto; 
   display: flex;
   flex-direction: row;
   flex: 1; 
 }
 
-.left-section {
+main {
   flex: 1; 
   display: flex;
   flex-direction: column;
@@ -95,7 +100,7 @@ html {
   margin: 10px;
 }
 
-.save-for-later {
+.save-for-later-section {
   background-color: #ffffff;
   margin: 10px;
   border: none;
@@ -103,7 +108,7 @@ html {
   color: #000000;
 }
 
-.right-section {
+aside{
   background-color: #ffffff;
   flex: 0 0 27%; 
   margin: 10px;
@@ -152,14 +157,14 @@ html {
 .product-price {
   padding: 0px 30px;
   font-size: 18px;
-  font-weight: 550;
+  /* font-weight: 550; */
   line-height: 25.2px;
   color: #000000;
 }
 
 .save {
   border: none;
-  font-weight: 550;
+  font-weight: 500;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 22.4px;
@@ -167,6 +172,7 @@ html {
   cursor: pointer;
   background-color: inherit;
   padding: 20px 30px;
+
 }
 .save:hover {
   color: #4275f2;
@@ -181,7 +187,7 @@ html {
   color: #000000;
   margin-left: auto;
 }
-.save-for-later h2 {
+.save-for-later-section h2 {
   text-transform: capitalize;
   padding:15px 30px;
   border-bottom: 1px solid #ddd;
@@ -202,9 +208,10 @@ html {
   margin-bottom: 0;
   padding: 8px 15px;
   line-height: 22.4px;
-  font-weight: 550;
+  font-weight: 500;
+
   color: #878787;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .price-detail-description {
@@ -230,5 +237,6 @@ html {
 }
 .price-total-amount-box p {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
+
 }
