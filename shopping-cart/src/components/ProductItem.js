@@ -22,14 +22,16 @@ function ProductItem({
       <div className="product-image">
         <img src={product.image} alt={product.name} />
       </div>
+    <div className="product-detailed-description">
       <div className="product-details">
-        <div className="product-name">{product.name}</div>
-        <div className="product-price">₹{product.price}</div>
-        <button className="save" onClick={handleButtonClick}>
-          {buttonLabel}
-        </button>
-      </div>
-      <div className="delivery-date">{product.deliveryDate}</div>
+          <div className="product-name">{product.name}</div>
+          <div className="product-price">₹{product.price}</div>
+          <button className="save" onClick={handleButtonClick}>
+            {buttonLabel}
+          </button>
+        </div>
+        <div className="delivery-date">{product.deliveryDate}</div>
+      </div>      
     </div>
   );
 }
