@@ -9,7 +9,7 @@ function App() {
   const [products, setProducts] = useState([
     {
       id: 1,
-      name: "VEERACOLLECTION Women Printed Straight Kurta",
+      name: "VEERACOLLhgjklkECTION Women Printed Straight Kurta",
       status: "SAVE FOR LATER",
       price: 10.99,
       deliveryDate: "Delivery by Wed Sep 30",
@@ -143,7 +143,7 @@ function App() {
     <div className="app-container">
       <Header />
       <div className="content">
-        <div className="left-section">
+        <main>
           <ProductSection
             products={products}
             saveForLater={(productId) =>
@@ -156,13 +156,13 @@ function App() {
               handleActionButtonClick("moveToProduct", productId)
             }
           />
-        </div>
-        <div className="right-section">
+        </main>
+        <aside>
           <PriceTotal
             totalLength={products.length}
             totalProductPrice={totalProductPrice}
           />
-        </div>
+        </aside>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import ProductItem from "./ProductItem";
 
 const ProductSection = ({ products, saveForLater }) => {
   return (
-    <div className="product-section">
+    <section className="product-section">
       {products.map((product) => (
         <ProductItem
           key={product.id}
@@ -14,7 +14,7 @@ const ProductSection = ({ products, saveForLater }) => {
           } 
         />
       ))}
-    </div>
+    </section>
   );
 };
 export default ProductSection;

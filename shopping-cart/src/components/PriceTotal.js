@@ -2,7 +2,7 @@ import React from "react";
 
 const PriceTotal = ({ totalLength, totalProductPrice }) => {
   return (
-    <div className="price-total-box">
+    <section className="price-total-box">
       <div className="price-detail-heading">
         <h3>PRICE DETAILS</h3>
       </div>
@@ -27,7 +27,7 @@ const PriceTotal = ({ totalLength, totalProductPrice }) => {
           <p>{totalProductPrice.toFixed(2)}</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
