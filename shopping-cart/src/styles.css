@@ -7,35 +7,36 @@ html {
   font-family: Roboto;
 }
 header {
-  width: 100%;
+  width: 100vw;
   background-color: #2874f0;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 0;
   position: sticky;
-  height: 60px;
+  height: 6vh;
 }
 button{
   font-family: inherit;
   font-weight: 500;
 }
+.logo{
+  height:100%;
+}
 .logo img {
-  width: 100px;
+  width:6em;
   cursor: pointer;
-  height: 100%; 
+  padding:0.5em;
 }
 
 .dropbtn {
   cursor: pointer;
-  line-height: 20px;
   background-color: inherit;
   border: none;
   color: white;
-  padding: 16px;
-  font-size: 16px;
+  padding: 0.5em;
+  font-size: 1rem;
   font-weight: 500;
-
   height: 100%;
 }
 
@@ -50,18 +51,17 @@ button{
   display: none;
   position: absolute;
   background-color: #ffffff;
-  min-width: 160px;
+  min-width: 10em;
   z-index: 1;
-  /* margin-top:2px; */
 }
 
 .dropdown-content p {
   color: black;
-  padding: 10px 14px;
+  padding: 0.5em 0.6em;
   text-decoration: none;
   display: block;
   cursor: pointer;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 0.1em solid #dddddd;
 }
 
 .dropdown-content p:hover {
@@ -81,7 +81,8 @@ button{
 }
 
 .content {
-  margin: 20px;
+  margin: 3rem;
+  margin-bottom: 0rem;
   height: 100vh;
   overflow: auto; 
   display: flex;
@@ -90,6 +91,7 @@ button{
 }
 
 main {
+  width: 60vw;
   flex: 1; 
   display: flex;
   flex-direction: column;
@@ -97,36 +99,38 @@ main {
 
 .product-section {
   background-color: #ffffff;
-  margin: 10px;
+  width:100%;
 }
 
 .save-for-later-section {
   background-color: #ffffff;
-  margin: 10px;
+  margin: 1rem 0;
   border: none;
-  font-size: 16px;
+  font-size: 1rem;
   color: #000000;
 }
 
 aside{
   background-color: #ffffff;
   flex: 0 0 27%; 
-  margin: 10px;
-  height: 350px;
+  margin-left: 2rem;
+  height: 35vh;
+  width: 30vw;
 }
 
 .product-item {
   display: flex;
-  align-items: center;
-  padding: 30px;
-  border-bottom: 1px solid #ddd;
+  padding: 2em;
+  border-bottom: 0.1em solid #ddd;
 }
 
 .product-image {
-  width: 84px; 
-  height: 112px; 
+  width: 7em; 
+  height: 8em; 
+  min-width: 5em;
+  min-height: 6em;
   overflow: hidden; 
-  margin-right: 10px;
+  margin-right: 1em;
 }
 
 .product-image img {
@@ -135,43 +139,50 @@ aside{
   height: 100%; 
 }
 
-.product-details {
-  flex-grow: 1;
+.product-details{
+flex: 1;
+padding: 1em 2em;
+box-sizing: border-box;
+}
+
+.product-detailed-description{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .product-name {
-  line-height: 16px;
-  padding: 30px;
-  font-size: 18px;
+  line-height: 1rem;
+  padding: 1em 2em;
+  font-size: 1rem;
   color: #212121;
   cursor: pointer;
-  width: 412px; 
+  width: 25em; 
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+
 }
 
 .product-name:hover {
   color: #4275f2;
 }
 .product-price {
-  padding: 0px 30px;
-  font-size: 18px;
-  /* font-weight: 550; */
-  line-height: 25.2px;
+  padding: 0 2em;
+  font-size: 1rem;
   color: #000000;
+  width:2em;
 }
 
 .save {
   border: none;
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 16px;
-  line-height: 22.4px;
+  font-size: 1rem;
   color: #000000;
   cursor: pointer;
   background-color: inherit;
-  padding: 20px 30px;
+  padding: 1em 2em;
 
 }
 .save:hover {
@@ -179,39 +190,34 @@ aside{
 }
 
 .delivery-date {
-  padding-top: 25px;
+  padding-top: 2rem;
   align-self: flex-start;
-  font-size: 14px;
+  font-size: 0.8rem;
   white-space: nowrap; 
-  line-height: 19.6px;
   color: #000000;
-  margin-left: auto;
 }
 .save-for-later-section h2 {
   text-transform: capitalize;
-  padding:15px 30px;
-  border-bottom: 1px solid #ddd;
+  padding:1rem 2rem;
+  border-bottom: 0.1em solid #ddd;
 }
 
 .price-details {
   display: flex;
   justify-content: space-between;
-  padding:10px 40px;
-  border-bottom: 1px dotted #ddd;
+  padding:1rem 2rem;
+  border-bottom: 0.1em dotted #ddd;
 }
 .price-detail-heading {
-  padding:20px;
-  border-bottom: 1px solid #ddd;
+  padding:1rem 2rem;
+  border-bottom: 0.1em solid #ddd;
 }
 .price-detail-heading h3 {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 8px 15px;
-  line-height: 22.4px;
   font-weight: 500;
-
   color: #878787;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .price-detail-description {
@@ -220,9 +226,8 @@ aside{
   justify-content: space-around;
 }
 .price-detail-description p {
-  line-height: 22.4px;
   letter-spacing: normal;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .price-detail-description-price {
   display: flex;
@@ -233,10 +238,42 @@ aside{
 .price-total-amount-box {
   display: flex;
   justify-content: space-between;
-  padding: 10px 35px;
+  padding:1rem 2rem;
 }
 .price-total-amount-box p {
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 500;
+}
 
+
+@media  screen and (max-width:1000px) {
+  .delivery-date{
+    align-self: center;
+  }
+  .product-details{
+    align-self: center;
+  }
+  .product-item {
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    flex-direction: column;
+    border-bottom: 0.1em solid #ddd;
+}
+.content {
+  margin: 1rem;
+  margin-bottom: 0rem;
+  height: 100vh;
+  overflow: auto; 
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+}
+main{
+  width: 100%;
+}
+aside{
+  width: 100%;
+  margin-left: 0;
+}
 }
